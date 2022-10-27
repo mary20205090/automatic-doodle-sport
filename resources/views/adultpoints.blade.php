@@ -559,6 +559,8 @@ nav .profile-details i{
     <tr>
            <th  scope="row">{{ $adult->id}}</th>
                 <td>{{ $adult->fname}}</td>
+                <td>{{ $adult->mname}}</td>
+                <td>{{ $adult->lname}}</td>
                   <td>{{ $adult->game}}</td>
                   <td>{{ $adult->points}}</td>
                   <td>

@@ -56,10 +56,13 @@ class PointController extends Controller
         
        
                 
-
-          $point= Point::all(); 
-          $fetchAdults = Adult::latest()->get();
-          return view('adultpoints',compact('point','fetchAdults')); 
+        $point=  DB::table('adults')
+        ->join('points','adult_id',"=",'points.adult_id')
+        ->get();
+ 
+        //   $point= Point::all(); 
+        //   $fetchAdults = Adult::latest()->get();
+          return view('adultpoints',compact('point')); 
 
       }
    
