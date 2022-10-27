@@ -546,6 +546,8 @@ nav .profile-details i{
     <tr>
       <th scope="col">#</th>
       <th scope="col">First Name</th>
+      <th scope="col">Middle Name</th>
+      <th scope="col">Last Name</th>
       <th scope="col">Game</th>
       <th scope="col">Points</th>
       <th scope="col">Action</th>
@@ -566,7 +568,6 @@ nav .profile-details i{
                   <td>
                   <a href="delete2/{{ $adult->id }}" class="btn btn-danger active"  onclick="return confirm('Are you sure you want to delete this record?')" role="button" data-bs-toggle="button" aria-pressed="true">DELETE ADULT</a>
                 
-                  <a href="viewer/{{ $adult->id }}" class="btn btn-success active"  onclick="return confirm('Are you sure you want to delete this record?')" role="button" data-bs-toggle="button" aria-pressed="true">VIEW ADULT</a>
 
                   </td>
 

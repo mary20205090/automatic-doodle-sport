@@ -55,9 +55,16 @@ class PointController extends Controller
       {
         
        
-                
+        // $users = DB::table('users')
+        //     ->join('contacts', 'users.id', '=', 'contacts.user_id')
+        //     ->join('orders', 'users.id', '=', 'orders.user_id')
+        //     ->select('users.*', 'contacts.phone', 'orders.price')
+        //     ->get();
+
+         
         $point=  DB::table('adults')
         ->join('points','adult_id',"=",'points.adult_id')
+        ->select('adults.*','points.game','points.points')
         ->get();
  
         //   $point= Point::all(); 
